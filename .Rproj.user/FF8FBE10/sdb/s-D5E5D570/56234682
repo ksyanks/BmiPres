@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle       : Automobile Exploratory Data Analysis\nsubtitle    : Shiny Web Application Pitch Presentation\nauthor      : KS\njob         : MES System\ndate        : date()\nframework   : io2012        # {io2012, html5slides, shower, dzslides, ...}\nhighlighter : highlight.js  # {highlight.js, prettify, highlight}\nhitheme     : tomorrow      # \nwidgets     : []            # {mathjax, quiz, bootstrap}\nmode        : selfcontained # {standalone, draft}\nknit        : slidify::knit2slides\n---\n\n## Agenda\n\n1. Purpose and Information\n2. Embedded R Code  \n3. Instructions to use\n\n--- .class #id\n\n## 1. Purpose and Information\n\n\nThis Shiny application is my submission for the assignment of the course Developing Data Products, part of the Data Science Specialization offered by the Johns Hopkins University. This is an interactive web based application, frameworked in R, for Automobile Exploratory Data Analysis\n\nThis application is built based on the data of 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973 - 74 models).\n\nggplot2 was used for the plotting. The following page is the code for a static view of the default plot that is rendered on the web app\n\n\n---\nEmbedded R Code\n```{r}\nlibrary(ggplot2); data(mtcars); dataset <- mtcars\nggplot(dataset,aes_string(x='cyl', y='mpg')) + geom_point() + geom_point(size=3,color='red') +\nlabs( x= 'Number of cylinders', y = \"Miles Per Gallon\") \n\n```\n\n---\n\n## 3. Instructions to use\nTo reproducing this app locally on your computer, you would need to follow these steps:\n\n1. Install rstudio if you don't have one.\n2. Install the necessary packages to run RStudio's Shiny server locally, go to this link for more detail: <http://shiny.rstudio.com/articles/shinyapps.html>\n3. Copy server.R, ui.R and README.md files from <https://github.com/ksyanks/shinyapp> to your local. These files (server.R, ui.R and README.md) you find them the above given link at GitHub.\nPlease place the files into an directory example, mpg directory, set your working 1 level above mpg directory. You can launch the app in R with the following commands:\n\ninstall.packages(\"shiny\")     \nlibrary(shiny)     \nrunApp('mpg')       \n\n\n\n",
+    "created" : 1468128216755.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3551912625",
+    "id" : "56234682",
+    "lastKnownWriteTime" : 1468075676,
+    "last_content_update" : 1468075676,
+    "path" : "~/GitHub/m9Assignment/mpgPitch/index.Rmd",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

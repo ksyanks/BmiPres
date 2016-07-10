@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Body Mass Index - Shiny Web Application Pitch Presentation\n========================================================\nauthor: KS\ndate:  `r date()`\nautosize: true\n\nAgenda\n========================================================\n\n1. Purpose and Information\n2. Embedded R Code  \n3. Instructions to use\n\n1. Purpose and Information\n========================================================\nThis Shiny application is my submission for the assignment of the course Developing Data Products, part of the Data Science Specialization offered by the Johns Hopkins University. This is an interactive web based application, frameworked in R, for Body Mass Index (BMI) calculation.\n\nBMI is a statistic developed by Adolphe Quetelet in the 1900's for evaluating body mass. It is not related to gender and age. It uses the same formula for men, women and children.\n\n\nEmbedded R Code \n========================================================\nBMI is calculated with below sample code\n```{r}\n#body weight key in by user\nslrBdyKg <- 60\n\n#height key in by user\nslrBdyHt <- 160\n\n#Calculate BMI\nreBdyBMI <- slrBdyKg/((slrBdyHt/100) * (slrBdyHt/100)) \nprint(reBdyBMI)\n```\n\nInstructions to use\n========================================================\n\nTo reproducing this app locally on your computer, you would need to follow these steps:\n  1. Install rstudio if you don't have one.\n  2. Install the necessary packages to run RStudio's Shiny server locally, go to this link for more detail: <http://shiny.rstudio.com/articles/shinyapps.html>\n  3. Copy server.R, ui.R and README.md files from <https://github.com/ksyanks/BMIshinyapp> to your local. These files (server.R, ui.R and README.md) you find them the above given link at GitHub.\n  Please place the files into an directory example, myBMI directory, set your working 1 level above mpg directory. You can launch the app in R with the following commands:\n\n    install.packages(\"shiny\")     \n    library(shiny)     \n    runApp('myBMI')       \n\n",
+    "created" : 1468128160270.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2194045566",
+    "id" : "B3811804",
+    "lastKnownWriteTime" : 1468130862,
+    "last_content_update" : 1468130862764,
+    "path" : "~/GitHub/m9Assignment/BmiPres/myBmiPres.Rpres",
+    "project_path" : "myBmiPres.Rpres",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_presentation"
+}

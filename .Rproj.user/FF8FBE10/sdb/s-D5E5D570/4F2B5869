@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "RMS Titanic Sinking Exercise: Shiny Web Application Pitch Presentation\n========================================================\nauthor: Teuton2015\nfont-family: 'Helvetica'\ndate: `r date()`\nautosize: true\ntransition: concave\n\nRMS Titanic Sinking: Pitch Presentation Content\n========================================================\n![alt text](TitanicSinkingFigure.png)\n<small>Image source: <https://kaggle2.blob.core.windows.net/competitions/kaggle/3136/logos/front_page.png></small>\n\n1. Purpose and Information\n2. Embedded R Code  \n3. Instructions for Reproducing Locally\n\n1. Purpose and Information\n===\n<small>This Shiny application is my submission for the assignment of the course “Developing Data Products”, part of the Data Science Specialization offered by the Johns Hopkins University on Coursera. It is an interactive web based application, frameworked in R, for fetching information on the sex, age, and passenger class of the survivors of the RMS Titanic which sunk on April 15, 1912.\n\nThe dataset, found on Kaggle.com, <https://www.kaggle.com/c/titanic/data>, contains 891 records with several identification characteristic variables, and it is popular for many enthusiastic neophytes in machine learning.\n\n* My Shiny application can be found on: <https://teuton2015.shinyapps.io/MyShinyApp/>\n* My GitHub repository for this project, with all the working files, is found on: <https://github.com/Teuton2015/Developing_Data_Products.git></small>\n\n2. Embedded R Code\n========================================================\n<small>library(ggplot2) was used for the plotting. Here is the code for a static view of the default plot that is rendered on the web app:</small>\n```{r}\nlibrary(ggplot2)\ntrainData <- read.csv(\"train.csv\")\ng <- ggplot(trainData, aes(Age, Pclass))\ng + geom_point(aes(color=Sex)) + facet_grid(Survived ~.)\n```\n\n3. Instructions for Reproducing Locally\n========================================================\nFor reproducing this project locally on your computer, you would need to follow these steps:\n\n1. Install the necessary packages to run RStudio’s Shiny server locally, as instructed here: <http://shiny.rstudio.com/articles/shinyapps.html>\n\n2. Run the following command in RStudio:\n\n> runGitHub(“MyShinyApp”, “Teuton2015”)",
+    "created" : 1468128399939.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "606353047",
+    "id" : "4F2B5869",
+    "lastKnownWriteTime" : 1468075365,
+    "last_content_update" : 1468075365,
+    "path" : "C:/myFile/coursera/m9/wk4/sample/04-Developing_Data_Products-master/Developing_Data_Products-master/MyShinyApp.Rpres",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_presentation"
+}
